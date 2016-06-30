@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REST CLIENT</title>
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css\rest.css">
+	
+
+</head>
+<body>
+
+<div class="container">
+	<div class="page-header">
+  <h1>Rest-Client <small>A chrome extension for handling http requests.</small></h1>
+</div>
+		<div class="row">
+
+		  <div class="col-lg-10">
+		    <div class="input-group">
+		      <div class="input-group-btn">
+		          <select class="btn btn-default dropdown-toggle" id="drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	<option value="item1">GET</option>
+		          	<option value="item2">POST</option>
+		          	<option value="item3">PUT</option>
+		          	<option value="item4">DELETE</option>
+		          </select>
+		        
+		      </div><!-- /btn-group -->
+		      <input type="url" id="myurl" pattern="https?://.+" class="form-control" aria-label="..." placeholder="Please enter a valid url e.g. https://www.google.com" required>
+		    </div><!-- /input-group -->
+		  </div><!-- /.col-lg-10 -->
+		  <button type="button" class="btn btn-warning" id="params">Params</button>
+		  <button type="button" class="btn btn-primary">Send</button>
+		  <div class="col-md-12 col-md-offset-4">
+				<div id="kve_custom"></div>
+				<button type="button" class="btn btn-success" id="update">Update URL</button>
+			</div>
+
+		
+		 </div>
+		 <ul class="nav nav-tabs" role="tablist">
+	    <li role="presentation" class="active"><a href="#raw" aria-controls="raw" role="tab" data-toggle="tab">RESPONSE-RAW</a></li>
+	    <li role="presentation"><a href="#header" aria-controls="header" role="tab" data-toggle="tab">HEADER RESPONSE</a></li>
+	    <li role="presentation"><a href="#request" aria-controls="request" role="tab" data-toggle="tab">TYPE OF REQUEST</a></li>
+	    
+	    </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="raw">RESPONSE-RAW</div>
+    <div role="tabpanel" class="tab-pane" id="header">HEADER RESPONSE</div>
+    <div role="tabpanel" class="tab-pane" id="request">TYPE OF REQUEST</div>
+   
+  </div>
+
+	</div> 
+<script src="js\jquery-2.2.4.min.js"></script>
+<script src="js\bootstrap.min.js"></script>
+<script src="js\jquery.keyvalueeditor.js"></script>
+<script src="js\rest.js"></script>
+
+</body>
+</html>

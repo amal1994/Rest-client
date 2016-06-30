@@ -1,0 +1,44 @@
+.form-control{
+	margin-left:10.5px;
+}
+ .btn-group
+ {
+ 	margin-top:2px;
+ }
+
+ textarea.form-control
+ {
+ 	margin-left: -2.5px;
+ }
+
+ .btn
+ {
+ 	padding: 6px 25px;
+ }
+
+ .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+select.btn.btn-default.dropdown-toggle{
+	width: 7.5em;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding-left: 7px;
+}
+
+.btn.btn-success
+{
+	display: none;	
+	margin: 5px 9em 0 9em;
+	padding: 5px 15px 5px 10px;
+}
+
